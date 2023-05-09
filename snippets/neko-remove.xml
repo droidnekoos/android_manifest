@@ -23,6 +23,7 @@
   <remove-project name="crdroidandroid/android_packages_apps_Dialer" />
   <remove-project name="crdroidandroid/android_packages_apps_Eleven" />
   <remove-project name="crdroidandroid/android_packages_apps_Contacts" />
+  <remove-project name="crdroidandroid/android_packages_apps_ExactCalculator" />
   <remove-project name="crdroidandroid/android_vendor_qcom_opensource_fm-commonsys" />
 
 </manifest>

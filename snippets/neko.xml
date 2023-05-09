@@ -42,6 +42,7 @@
   <project path="packages/apps/Dialer" name="droidnekoos/android_packages_apps_Dialer" groups="pdk-fs" remote="neko" />
   <project path="packages/apps/Eleven" name="droidnekoos/android_packages_apps_Eleven" remote="neko" />
   <project path="packages/apps/Contacts" name="droidnekoos/android_packages_apps_Contacts" groups="pdk-fs" remote="neko" />
+  <project path="packages/apps/ExactCalculator" name="droidnekoos/android_packages_apps_ExactCalculator" remote="neko" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="droidnekoos/android_vendor_qcom_opensource_fm-commonsys" groups="qcom,qssi" remote="neko" />
 
 </manifest>
