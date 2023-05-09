@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote  name="neko"
+	   fetch="https://github.com/"
+           revision="refs/heads/13.0"
+           sync-j="8" />
+           
+        <remote  name="rising"
+	   fetch="https://github.com/"
+           revision="refs/heads/thirteen"
+           sync-j="8" />
+
+  <include name="snippets/neko-remove.xml" />
+
+  <!-- Utama -->
+  <project path="android" name="droidnekoos/android_manifest" remote="neko" />
+  <project path="build/make" name="droidnekoos/android_build" groups="pdk" remote="neko" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <!-- system packages -->
+  <project path="vendor/addons" name="droidnekoos/android_vendor_addons" remote="neko" />
+  <project path="vendor/lineage" name="droidnekoos/android_vendor_crdroid" remote="neko" />
+  <project path="frameworks/base" name="droidnekoos/android_frameworks_base" remote="neko" />
+  <project path="lineage-sdk" name="droidnekoos/android_lineage-sdk" remote="neko" />
+
+  <!-- AOSP packages -->
+  <project path="packages/apps/crDroidSettings" name="droidnekoos/android_packages_apps_crDroidSettings" remote="neko" />
+  <project path="packages/apps/Launcher3" name="droidnekoos/android_packages_apps_Launcher3" remote="rising" />
+  <project path="packages/apps/Settings" name="droidnekoos/android_packages_apps_Settings" groups="pdk-fs" remote="neko" />
+  <project path="packages/apps/SetupWizard" name="droidnekoos/android_packages_apps_SetupWizard" remote="neko" />
+  <project path="packages/apps/GameSpace" name="droidnekoos/android_packages_apps_GameSpace" groups="pdk-fs" remote="neko" />
+  <project path="packages/services/Telecomm" name="droidnekoos/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="neko" />
+  <project path="packages/inputmethods/LatinIME" name="droidnekoos/android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="neko" />
+  <project path="packages/apps/Messaging" name="droidnekoos/android_packages_apps_Messaging" groups="pdk-fs" remote="neko" />
+  <project path="packages/apps/DeskClock" name="droidnekoos/android_packages_apps_DeskClock" remote="neko" />
+  <project path="packages/apps/Dialer" name="droidnekoos/android_packages_apps_Dialer" groups="pdk-fs" remote="neko" />
+  <project path="packages/apps/Eleven" name="droidnekoos/android_packages_apps_Eleven" remote="neko" />
+  <project path="packages/apps/Contacts" name="droidnekoos/android_packages_apps_Contacts" groups="pdk-fs" remote="neko" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="droidnekoos/android_vendor_qcom_opensource_fm-commonsys" groups="qcom,qssi" remote="neko" />
+
+</manifest>

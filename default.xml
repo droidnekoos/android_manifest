@@ -1152,4 +1152,5 @@
   <include name="snippets/crdroid.xml" />
   <include name="snippets/lineage.xml" />
   <!--<include name="snippets/pixel.xml" />-->
+  <include name="snippets/neko.xml" />
 </manifest>
